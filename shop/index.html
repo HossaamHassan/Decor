@@ -375,10 +375,50 @@
             <a href="../sign-in/" class="btn shop-btn-one me-auto"> Login </a>
             <a href="../signup/" class="btn shop-btn-one me-auto"> Signup </a>
           </div>
+          <div class="cart-shopping position-relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="icon-cart-span">0</span>
+          </div>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
+    <!-- Start Shopping Cart -->
+    <div class="shopping-cart">
+      <div
+        class="carts position-fixed z-3 bg-white d-flex flex-column justify-content-between"
+      >
+        <div class="head d-flex flex-column">
+          <p class="bascket border-bottom pb-1 py-2 px-2">Shopping Cart</p>
+          <div class="products"></div>
+        </div>
+        <div class="buttons d-flex align-items-center justify-content-between">
+          <a
+            style="
+              background-color: var(--third-color);
+              flex: 1;
+              color: white;
+              padding: 7px 0;
+            "
+            class="text-center"
+            href="../checkout/index.html"
+            >Checkout</a
+          >
+          <span
+            style="
+              background-color: black;
+              flex: 1;
+              color: white;
+              padding: 7px 0;
+              cursor: pointer;
+            "
+            class="text-center"
+            id="close-cart"
+            >Close</span
+          >
+        </div>
+      </div>
+    </div>
     <!-- Start Blog List -->
     <div class="blog-list mt-5">
       <div class="container">
@@ -774,7 +814,7 @@
             <!-- Start Products -->
             <div class="products mt-5">
               <div class="container">
-                <div class="row">
+                <div class="row box-product">
                   <div class="col-6 col-lg-4 mb-3">
                     <div
                       class="box d-flex align-items-center justify-content-center gap-2 flex-column"

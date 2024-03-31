@@ -130,7 +130,126 @@ ul {
     border: none;
   }
 }
+.cart-shopping {
+  font-size: 1.8rem;
+}
+nav .list {
+  font-size: 1.8rem;
+}
+.cart-shopping span {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 13px;
+  top: 12px;
+  right: -10px;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* End Navbar */
+/* Start Features */
+.product-features .cart .btn-cart {
+  cursor: pointer;
+  background-color: var(--first-color);
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+.product-features .box-pro img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+/* End Features */
+/* Start Shopping Cart */
+.shopping-cart .carts {
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100vh;
+  box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.15),
+    -10px 0px 15px -5px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+@media (max-width: 992px) {
+  .shopping-cart .carts {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .shopping-cart .carts {
+    width: 70%;
+  }
+}
+.shopping-cart .show {
+  right: 0; /* Adjust this to visually hide the closed cart */
+}
+.shopping-cart .carts .product {
+  transition: 0.3s;
+}
+.shopping-cart .carts .product a {
+  color: black;
+}
+.shopping-cart .carts .products {
+  height: 88vh;
+  overflow: auto;
+}
+.shopping-cart .carts .product:hover {
+  background-color: rgb(135 135 135 / 12%);
+}
+.shopping-cart .carts .product:hover .name {
+  color: #888;
+}
+.shopping-cart .carts .name,
+.shopping-cart .carts .price {
+  font-size: 14px;
+}
+.shopping-cart .carts .bascket {
+  font-size: 1.2rem;
+}
+.shopping-cart .close-cart i {
+  font-size: 12px;
+  transition: 0.3s;
+  padding: 5px;
+  cursor: pointer;
+  color: #888;
+}
+.shopping-cart .close-cart i:hover {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  width: fit-content;
+}
+.checkout .quantity {
+  font-weight: 500;
+  height: fit-content;
+}
+.shopping-cart .quantity .minus,
+.shopping-cart .quantity .plus,
+.checkout .quantity .plus,
+.checkout .quantity .minus {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.minus,
+.plus {
+  height: 25px;
+  font-size: 25px;
+  width: 25px;
+}
+/* End Shopping Cart */
 /* Start Carousel */
 .carousel .carousel-inner {
   background-color: var(--main-color);
@@ -204,7 +323,7 @@ ul {
   color: white;
 }
 .products .box .shop-btn {
-  bottom: -15%;
+  bottom: -20%;
   transition: bottom 0.3s;
 }
 @media (max-width: 992px) {
